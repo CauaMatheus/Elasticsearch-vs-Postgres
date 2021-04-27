@@ -5,14 +5,14 @@ Nesse repositório, está presente o meu estudo sobre elasticsearch e a sua velo
 Irei explicar como ele foi feito, suas vantagens e desvantagens.
 
 
-## Como foi feito ?
+## Como foi feito o estudo?
 Bom... para começar, eu utilizei o banco de dados publico do postgres como a base. <br/>
 Importei 50000 dados do banco para o elasticsearch. E após isso, realizei 10 buscas em cada, comparei a média e a mediana de cada.
 
 ---
 
 ### Elasticsearch time:
-![](.github/images/elasticsearch_time.png)
+![](.github/images/elasticsearch_time.png)<br/>
 <strong>Mínimo:</strong> 196,927 milissegundos<br/>
 <strong>Máximo:</strong> 1,618 segundos<br/>
 <strong>Média:</strong> 386,113 milissegundos<br/>
@@ -21,7 +21,7 @@ Importei 50000 dados do banco para o elasticsearch. E após isso, realizei 10 bu
 ---
 
 ### Postgres time:
-![](.github/images/postgres_time.png)
+![](.github/images/postgres_time.png)<br/>
 <strong>Mínimo:</strong> 196,927 milissegundos<br/>
 <strong>Máximo:</strong> 1,618 segundos<br/>
 <strong>Média:</strong> 386,113 milissegundos<br/>
@@ -33,6 +33,15 @@ Ao compararmos o tempo de espera entre ambos:<br/>
 a diferença da média foi aproximadamente <strong>4,711 segundos</strong>, 
 <br/>enquanto a diferença da mediana foi <strong>4,687 segundos</strong><br/>
 Ambas diferenças são gigantes para aplicações escaláveis
+
+## Rotas
+### GET `/elastic/import`
+### GET `/elastic/list`
+### GET `/elastic/find/:id`
+### GET `/postgres/list`
+
+Eu sei que o método POST seria o melhor para a rota de import, porém apenas para esse caso utilizei GET e com o motivo de auxiliar o estudo, sem que seja preciso utilizar o Insomnia.
+
 
 ## Como usar ?
 Para testar essa aplicação na sua máquina é bem fácil, apenas clone esse repositório e instale as dependências.<br/>
