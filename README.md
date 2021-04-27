@@ -22,10 +22,10 @@ Importei 50000 dados do banco para o elasticsearch. E após isso, realizei 10 bu
 
 ### Postgres time:
 ![](.github/images/postgres_time.png)<br/>
-<strong>Mínimo:</strong> 196,927 milissegundos<br/>
-<strong>Máximo:</strong> 1,618 segundos<br/>
-<strong>Média:</strong> 386,113 milissegundos<br/>
-<strong>Mediana:</strong> 251,178 milissegundos<br/>
+<strong>Mínimo:</strong> 4,615 segundos<br/>
+<strong>Máximo:</strong> 6,358 segundos<br/>
+<strong>Média:</strong> 5,097 segundos<br/>
+<strong>Mediana:</strong> 4,938 segundos<br/>
 
 ---
 
